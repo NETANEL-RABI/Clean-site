@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "מצב קריאה נקי",
+  "version": "1.0.0",
+  "description": "הופך כל כתבה לדף קריאה נקי ונוח.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "מצב קריאה נקי"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-reader": {
+      "suggested_key": {
+        "default": "Alt+R"
+      },
+      "description": "הפעלה/כיבוי של מצב קריאה"
+    }
+  }
+}
